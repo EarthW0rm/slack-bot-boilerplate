@@ -5,11 +5,13 @@
   "repository": "git@github.com:EarthW0rm/slack-bot-boilerplate.git",
   "license": "GNU",
   "scripts": {
-    "build": "cross-env NODE_ENV=production webpack build --config webpack.prod.js",
-    "build:dev": "cross-env NODE_ENV=development webpack build --config webpack.dev.js",
+    "build": "cross-env NODE_ENV=production gulp",
     "start": "nodemon ./dist",
+    "build:dev": "cross-env NODE_ENV=development gulp",
+    "start:dev": "cross-env NODE_ENV=development gulp watch",
     "lint": "eslint --ignore-path .eslintignore --ext .js,.ts .",
-    "format": "prettier --ignore-path .gitignore --write \"**/*.+(js|ts|json)\""
+    "format": "prettier --ignore-path .gitignore --write \"**/*.+(js|ts|json)\"",
+    "prepare": "husky install"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.12.0",
@@ -26,6 +28,7 @@
     "eslint-plugin-promise": "^6.0.0",
     "gulp": "^4.0.2",
     "gulp-nodemon": "^2.5.0",
+    "husky": "^7.0.4",
     "nodemon": "^2.0.15",
     "prettier": "^2.5.1",
     "ts-loader": "^9.2.6",
