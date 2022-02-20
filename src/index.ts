@@ -1,14 +1,13 @@
 class Program {
-    constructor() {
-        console.log('new')
-    }
+  constructor() {
+    console.log('new');
+  }
 
-    Main() {
-        console.log("Main called")
-        console.log("Watched Changed 4")
-
-    }
+  main() {
+    console.log('Main called');
+    console.log('Watched Changed 6');
+  }
 }
 
 const program = new Program();
-program.Main();
+program.main();

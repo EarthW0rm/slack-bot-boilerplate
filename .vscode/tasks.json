@@ -14,8 +14,16 @@
         "isDefault": true
       },
       "presentation": {
-        "panel": "dedicated"
+        "panel": "new"
       },
+      "problemMatcher": "$tsc-watch"
+    },
+    {
+      "type": "gulp",
+      "task": "watch",
+      "group": "build",
+      "problemMatcher": [],
+      "label": "gulp: watch"
     }
   ]
 }
