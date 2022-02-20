@@ -8,8 +8,8 @@
     "build": "cross-env NODE_ENV=production webpack build --config webpack.prod.js",
     "build:dev": "cross-env NODE_ENV=development webpack build --config webpack.dev.js",
     "start": "nodemon ./dist",
-    "lint": "eslint --ignore-path .eslintignore --ext .js,.ts ."
-
+    "lint": "eslint --ignore-path .eslintignore --ext .js,.ts .",
+    "format": "prettier --ignore-path .gitignore --write \"**/*.+(js|ts|json)\""
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.12.0",

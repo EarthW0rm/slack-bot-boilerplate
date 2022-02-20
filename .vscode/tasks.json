@@ -4,10 +4,7 @@
     {
       "type": "process",
       "command": "npm",
-      "args": [
-        "run",
-        "build:dev"
-      ],
+      "args": ["run", "build:dev"],
       "label": "npm: build:dev",
       "group": {
         "kind": "build",
